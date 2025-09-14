@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tuition Manager — Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+  <style>
+    .table-fixed thead th { position: sticky; top: 0; background: #fff; z-index: 1; }
+    .w-140{width:140px}.w-160{width:160px}.w-100{width:100px}
+    .small-muted{font-size:.85rem;color:#6c757d}
+    .tag{display:inline-block;border:1px solid #dee2e6;border-radius:999px;padding:.15rem .5rem;margin:.1rem .2rem;background:#f8f9fa}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-semibold" href="index.html">Tuition Manager</a>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Calendar</a></li>
+        <li class="nav-item"><a class="nav-link" href="enroll.html">Enrollment Manager</a></li>
+        <li class="nav-item"><a class="nav-link" href="student.html">Student Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+        <li class="nav-item"><a class="nav-link" href="payroll.html">Payroll</a></li>
+        <li class="nav-item"><a class="nav-link active" href="admin.html">Admin</a></li>
+        <li class="nav-item"><a class="nav-link" href="finance.html">Finance</a></li>
+      </ul>
+
+      <!-- Data menu -->
+      <div class="dropdown ms-2">
+        <button class="btn btn-sm btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Data</button>
+        <ul class="dropdown-menu dropdown-menu-end small">
+          <li><h6 class="dropdown-header">Students & Enrollments</h6></li>
+          <li><a class="dropdown-item" href="#" id="actConnectStudents">Connect Students JSON…</a></li>
+          <li><a class="dropdown-item" href="#" id="actCreateStudents">Create New Students JSON…</a></li>
+          <li><a class="dropdown-item" href="#" id="actSaveStudents">Save Students Now</a></li>
+          <li><hr class="dropdown-divider"/></li>
+          <li class="px-3 py-1 text-muted" id="dataStatus">No files connected</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <!-- Executive summary: show overall statistics and notes -->
+    <div id="adminSummary" class="mb-4"></div>
+
+    <ul class="nav nav-tabs mb-3" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabStudents" type="button" role="tab">Students</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabClasses" type="button" role="tab">Classes</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabTeachers" type="button" role="tab">Teachers</button></li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- Students -->
+      <div class="tab-pane fade show active" id="tabStudents" role="tabpanel">
+        <div class="d-flex gap-2 mb-2 align-items-center">
+          <button id="btnNewStudent" class="btn btn-primary btn-sm">+ New Student</button>
+          <input id="searchStudents" class="form-control form-control-sm" placeholder="Search name or code" style="max-width:280px">
+          <!-- Sort toggle: click to toggle sorting students by class -->
+          <button id="btnSortStudents" class="btn btn-outline-secondary btn-sm" type="button" title="Sort students by class">Sort by class</button>
+        </div>
+        <div class="table-responsive table-fixed" style="max-height:65vh">
+          <table class="table table-sm align-middle">
+            <thead><tr>
+              <th>Name</th><th class="w-140">Student Code</th><th>Classes</th><th class="w-160"></th>
+            </tr></thead>
+            <tbody id="tblStudentsBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Classes -->
+      <div class="tab-pane fade" id="tabClasses" role="tabpanel">
+        <div class="d-flex gap-2 mb-2">
+          <button id="btnNewClass" class="btn btn-primary btn-sm">+ New Class</button>
+          <input id="searchClasses" class="form-control form-control-sm" placeholder="Search class or ID" style="max-width:280px">
+        </div>
+        <div class="table-responsive table-fixed" style="max-height:65vh">
+          <table class="table table-sm align-middle">
+            <thead><tr>
+              <th>Name</th><th class="w-140">Class ID</th><th class="w-140">Price/session</th><th>Teacher</th><th class="w-160"></th>
+            </tr></thead>
+            <tbody id="tblClassesBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Teachers -->
+      <div class="tab-pane fade" id="tabTeachers" role="tabpanel">
+        <div class="d-flex gap-2 mb-2">
+          <button id="btnNewTeacher" class="btn btn-primary btn-sm">+ New Teacher</button>
+          <input id="searchTeachers" class="form-control form-control-sm" placeholder="Search teacher" style="max-width:280px">
+        </div>
+        <div class="table-responsive table-fixed" style="max-height:65vh">
+          <table class="table table-sm align-middle">
+            <thead><tr>
+              <th>Name</th><th class="w-140">Rate / hr</th><th>Classes</th><th class="w-160"></th>
+            </tr></thead>
+            <tbody id="tblTeachersBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Student modal -->
+  <div class="modal fade" id="studentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <form id="studentForm" class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="studentModalTitle">New Student</h6>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="stuId">
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Full name</label><input id="stuName" class="form-control" required></div>
+            <div class="col-md-3"><label class="form-label">Student code</label><input id="stuCode" class="form-control"></div>
+            <div class="col-md-3"><label class="form-label">Status</label>
+              <select id="stuStatus" class="form-select"><option value="active">Active</option><option value="inactive">Inactive</option></select>
+            </div>
+            <div class="col-md-4"><label class="form-label">Email</label><input id="stuEmail" type="email" class="form-control"></div>
+            <div class="col-md-4"><label class="form-label">Phone</label><input id="stuPhone" class="form-control"></div>
+            <div class="col-md-4"><label class="form-label">DOB</label><input id="stuDob" type="date" class="form-control"></div>
+            <div class="col-md-6"><label class="form-label">Guardian name</label><input id="stuGuardian" class="form-control"></div>
+            <div class="col-md-6"><label class="form-label">Guardian phone</label><input id="stuGuardianPhone" class="form-control"></div>
+            <div class="col-12"><label class="form-label">Notes</label><textarea id="stuNote" class="form-control" rows="2"></textarea></div>
+          </div>
+          <hr>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <h6 class="mb-0">Assign to classes</h6>
+              <span class="small-muted">Set discount% (optional)</span>
+            </div>
+            <div id="stuAssignList" class="row g-2"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" type="submit">Save Student</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Class modal -->
+  <div class="modal fade" id="classModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <form id="classForm" class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="classModalTitle">New Class</h6>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="clsId">
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Class name</label><input id="clsName" class="form-control" required></div>
+            <div class="col-md-3"><label class="form-label">Price / session (VND)</label><input id="clsPrice" type="number" min="0" step="1000" class="form-control" value="0"></div>
+            <div class="col-md-3"><label class="form-label">Default duration (hrs)</label><input id="clsDuration" type="number" min="0" step="0.25" class="form-control" value="1"></div>
+            <div class="col-md-6"><label class="form-label">Primary teacher</label><select id="clsTeacher" class="form-select"></select></div>
+            <div class="col-md-3"><label class="form-label">Capacity</label><input id="clsCapacity" type="number" min="0" class="form-control"></div>
+            <div class="col-md-3"><label class="form-label">Level/Grade</label><input id="clsLevel" class="form-control"></div>
+            <div class="col-12"><label class="form-label">Notes</label><textarea id="clsNote" class="form-control" rows="2"></textarea></div>
+          </div>
+          <hr>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <h6 class="mb-0">Assign students</h6>
+              <span class="small-muted">Optional per-student discount%</span>
+            </div>
+            <div id="clsAssignList" class="row g-2"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" type="submit">Save Class</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Teacher modal -->
+  <div class="modal fade" id="teacherModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <form id="teacherForm" class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="teacherModalTitle">New Teacher</h6>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="tchId">
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Full name</label><input id="tchName" class="form-control" required></div>
+            <div class="col-md-3"><label class="form-label">Rate / hour (VND)</label><input id="tchRate" type="number" min="0" step="1000" class="form-control" value="0"></div>
+            <div class="col-md-3"><label class="form-label">Subjects</label><input id="tchSubjects" class="form-control" placeholder="e.g. Math, English"></div>
+            <div class="col-md-6"><label class="form-label">Email</label><input id="tchEmail" type="email" class="form-control"></div>
+            <div class="col-md-6"><label class="form-label">Phone</label><input id="tchPhone" class="form-control"></div>
+            <div class="col-12"><label class="form-label">Notes</label><textarea id="tchNote" class="form-control" rows="2"></textarea></div>
+          </div>
+          <hr>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <h6 class="mb-0">Assign as primary teacher for classes</h6>
+            </div>
+            <div id="tchAssignList" class="row g-2"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" type="submit">Save Teacher</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.TM){
+        TM.initDataHooks && TM.initDataHooks();
+        TM.initAdminPage && TM.initAdminPage();
+      }
+    });
+  </script>
+</body>
+</html>

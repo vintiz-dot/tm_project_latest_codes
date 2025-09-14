@@ -1,0 +1,2727 @@
+{
+  "students": [
+    {
+      "id": "S-000001",
+      "studentId": "Class1_S01",
+      "name": "Chloe",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000002",
+      "studentId": "Class1_S02",
+      "name": "Flora",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000003",
+      "studentId": "Class1_S03",
+      "name": "Hanna",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000004",
+      "studentId": "Class1_S04",
+      "name": "Jessica",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000005",
+      "studentId": "Class1_S05",
+      "name": "kaka",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000006",
+      "studentId": "Class1_S06",
+      "name": "Kim Chi",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000007",
+      "studentId": "Class1_S07",
+      "name": "Mr Potatoe",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000008",
+      "studentId": "Class1_S08",
+      "name": "Sigma Boy",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000009",
+      "studentId": "Class1_S09",
+      "name": "Kaka",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000010",
+      "studentId": "Class1_S10",
+      "name": "Rosey",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000011",
+      "studentId": "Class1_S11",
+      "name": "William",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000012",
+      "studentId": "Class2_S01",
+      "name": "Cat",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000013",
+      "studentId": "Class2_S02",
+      "name": "Robot",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000014",
+      "studentId": "Class2_S03",
+      "name": "Bomb (Fake Capybara)",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000015",
+      "studentId": "Class2_S04",
+      "name": "Jack",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000016",
+      "studentId": "Class2_S05",
+      "name": "Wizkid (Phuc Lam)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000017",
+      "studentId": "Class2_S06",
+      "name": "Nick",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000018",
+      "studentId": "Class3_S01",
+      "name": "Bryan",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000019",
+      "studentId": "Class3_S02",
+      "name": "Chicken",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000020",
+      "studentId": "Class3_S03",
+      "name": "Capybara (Lucy)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000021",
+      "studentId": "Class3_S04",
+      "name": "Chess",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000022",
+      "studentId": "Class3_S06",
+      "name": "William",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000023",
+      "studentId": "Class3_S07",
+      "name": "Sophia",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000024",
+      "studentId": "Class4_S02",
+      "name": "Cherry",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000025",
+      "studentId": "Class4_S03",
+      "name": "Susan",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000026",
+      "studentId": "Class4_S04",
+      "name": "David",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000027",
+      "studentId": "Class4_S05",
+      "name": "Capybara",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000028",
+      "studentId": "Class4_S06",
+      "name": "Ba Kai",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000029",
+      "studentId": "Class5_S01",
+      "name": "Capybara (Nick's siter)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000030",
+      "studentId": "Class5_S02",
+      "name": "William (Chicken's brother)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000031",
+      "studentId": "Class5_S03",
+      "name": "Cat (Lisa's sister)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000032",
+      "studentId": "Class5_S04",
+      "name": "Lucy (Kim Chi's Sister)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000033",
+      "studentId": "Class5_S05",
+      "name": "Messi",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000034",
+      "studentId": "Class5_S06",
+      "name": "Ronaldo",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000035",
+      "studentId": "Class5_S07",
+      "name": "Baby Three (Sigma Boy's sister)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000036",
+      "studentId": "Class5_S08",
+      "name": "Peter (The tall boy)",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000037",
+      "studentId": "Class6_S02",
+      "name": "Cinamorol",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000038",
+      "studentId": "Class6_S03",
+      "name": "Elsa",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000039",
+      "studentId": "Class6_S04",
+      "name": "Pikachu",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000040",
+      "studentId": "Class6_S05",
+      "name": "Pochako",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000041",
+      "studentId": "Class7_S01",
+      "name": "Tony",
+      "contact": "nan",
+      "address": "",
+      "dob": null,
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      },
+      "status": "active",
+      "email": "",
+      "phone": "",
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "S-000042",
+      "studentId": "Class7_S02",
+      "name": "Anna",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000043",
+      "studentId": "Class7_S03",
+      "name": "Emma",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000044",
+      "studentId": "Class7_S04",
+      "name": "Ashley",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000045",
+      "studentId": "Class7_S05",
+      "name": "Monkey",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "S-000046",
+      "studentId": "Class7_S08",
+      "name": "Kate",
+      "contact": "nan",
+      "address": "",
+      "dob": "",
+      "notes": "",
+      "photoDataUrl": "",
+      "guardians": [
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "relationship": "",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "emergencyContact": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "id": "STU-000001",
+      "status": "active",
+      "name": "Jenny",
+      "studentId": "",
+      "email": "",
+      "phone": "",
+      "dob": null,
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "STU-000002",
+      "status": "active",
+      "name": "Cinamorol (Little angel)",
+      "studentId": "",
+      "email": "",
+      "phone": "",
+      "dob": null,
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    },
+    {
+      "id": "STU-000003",
+      "status": "active",
+      "name": "Suri",
+      "studentId": "",
+      "email": "",
+      "phone": "",
+      "dob": null,
+      "guardianName": "",
+      "guardianPhone": "",
+      "note": ""
+    }
+  ],
+  "classes": [
+    {
+      "id": "C-000001",
+      "name": "Dream Sky 1",
+      "priceVnd": 210000,
+      "defaultDurationHrs": 1.5,
+      "notes": "",
+      "teacherRatePerHour": 500000,
+      "monthNotes": {},
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "capacity": null,
+      "level": ""
+    },
+    {
+      "id": "C-000002",
+      "name": "Jupiter",
+      "priceVnd": 210000,
+      "defaultDurationHrs": 1.5,
+      "notes": "",
+      "teacherRatePerHour": 500000,
+      "monthNotes": {},
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "capacity": null,
+      "level": ""
+    },
+    {
+      "id": "C-000003",
+      "name": "Neptune",
+      "priceVnd": 210000,
+      "defaultDurationHrs": 1.5,
+      "notes": "",
+      "teacherRatePerHour": 500000,
+      "monthNotes": {},
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "capacity": null,
+      "level": ""
+    },
+    {
+      "id": "C-000004",
+      "name": "SKY 1",
+      "priceVnd": 210000,
+      "defaultDurationHrs": 1.5,
+      "notes": "",
+      "teacherRatePerHour": 500000,
+      "monthNotes": {},
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "capacity": null,
+      "level": ""
+    },
+    {
+      "id": "C-000005",
+      "name": "Sanrio Grade 6",
+      "priceVnd": 210000,
+      "defaultDurationHrs": 2,
+      "notes": "",
+      "teacherRatePerHour": 200000,
+      "monthNotes": {},
+      "teacherId": "TEA-000003",
+      "teacherName": "Vietnames Teacher",
+      "capacity": null,
+      "level": ""
+    },
+    {
+      "id": "C-000006",
+      "name": "Sun Class",
+      "priceVnd": 260000,
+      "defaultDurationHrs": 2,
+      "notes": "",
+      "teacherRatePerHour": 500000,
+      "monthNotes": {},
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "capacity": null,
+      "level": ""
+    },
+    {
+      "id": "C-000007",
+      "name": "Venus",
+      "priceVnd": 210000,
+      "defaultDurationHrs": 1.5,
+      "notes": "",
+      "teacherRatePerHour": 500000,
+      "monthNotes": {},
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "capacity": null,
+      "level": ""
+    },
+    {
+      "id": "CLS-000001",
+      "priceVnd": 210000,
+      "defaultDurationHrs": 1.5,
+      "name": "Sanrio Speaking class",
+      "capacity": null,
+      "level": "6",
+      "notes": "",
+      "teacherId": "TEA-000002",
+      "teacherName": "Clayton",
+      "teacherRatePerHour": 500000,
+      "monthNotes": {}
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "E-000001",
+      "studentId": "S-000001",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000002",
+      "studentId": "S-000002",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000003",
+      "studentId": "S-000003",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000004",
+      "studentId": "S-000004",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 100,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000005",
+      "studentId": "S-000005",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000006",
+      "studentId": "S-000006",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000007",
+      "studentId": "S-000007",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000008",
+      "studentId": "S-000008",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000009",
+      "studentId": "S-000009",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000010",
+      "studentId": "S-000010",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000011",
+      "studentId": "S-000011",
+      "classId": "C-000004",
+      "className": "SKY 1",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000012",
+      "studentId": "S-000012",
+      "classId": "C-000003",
+      "className": "Neptune",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000013",
+      "studentId": "S-000013",
+      "classId": "C-000003",
+      "className": "Neptune",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000014",
+      "studentId": "S-000014",
+      "classId": "C-000003",
+      "className": "Neptune",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000015",
+      "studentId": "S-000015",
+      "classId": "C-000003",
+      "className": "Neptune",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000016",
+      "studentId": "S-000016",
+      "classId": "C-000003",
+      "className": "Neptune",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000018",
+      "studentId": "S-000018",
+      "classId": "C-000002",
+      "className": "Jupiter",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000019",
+      "studentId": "S-000019",
+      "classId": "C-000002",
+      "className": "Jupiter",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000020",
+      "studentId": "S-000020",
+      "classId": "C-000002",
+      "className": "Jupiter",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000021",
+      "studentId": "S-000021",
+      "classId": "C-000002",
+      "className": "Jupiter",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000022",
+      "studentId": "S-000022",
+      "classId": "C-000002",
+      "className": "Jupiter",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000023",
+      "studentId": "S-000023",
+      "classId": "C-000002",
+      "className": "Jupiter",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000024",
+      "studentId": "S-000024",
+      "classId": "C-000007",
+      "className": "Venus",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000025",
+      "studentId": "S-000025",
+      "classId": "C-000007",
+      "className": "Venus",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000026",
+      "studentId": "S-000026",
+      "classId": "C-000007",
+      "className": "Venus",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000027",
+      "studentId": "S-000027",
+      "classId": "C-000007",
+      "className": "Venus",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000028",
+      "studentId": "S-000028",
+      "classId": "C-000007",
+      "className": "Venus",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000029",
+      "studentId": "S-000029",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000030",
+      "studentId": "S-000030",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000031",
+      "studentId": "S-000031",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000032",
+      "studentId": "S-000032",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000033",
+      "studentId": "S-000033",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000034",
+      "studentId": "S-000034",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000035",
+      "studentId": "S-000035",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000036",
+      "studentId": "S-000036",
+      "classId": "C-000001",
+      "className": "Dream Sky 1",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000037",
+      "studentId": "S-000037",
+      "classId": "C-000005",
+      "className": "Sanrio Grade 6",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000038",
+      "studentId": "S-000038",
+      "classId": "C-000005",
+      "className": "Sanrio Grade 6",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000039",
+      "studentId": "S-000039",
+      "classId": "C-000005",
+      "className": "Sanrio Grade 6",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000040",
+      "studentId": "S-000040",
+      "classId": "C-000005",
+      "className": "Sanrio Grade 6",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000041",
+      "studentId": "S-000041",
+      "classId": "C-000006",
+      "className": "Sun Class",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000042",
+      "studentId": "S-000042",
+      "classId": "C-000006",
+      "className": "Sun Class",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000043",
+      "studentId": "S-000043",
+      "classId": "C-000006",
+      "className": "Sun Class",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000044",
+      "studentId": "S-000044",
+      "classId": "C-000006",
+      "className": "Sun Class",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000045",
+      "studentId": "S-000045",
+      "classId": "C-000006",
+      "className": "Sun Class",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "E-000046",
+      "studentId": "S-000046",
+      "classId": "C-000006",
+      "className": "Sun Class",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000001",
+      "studentId": "STU-000001",
+      "classId": "C-000001",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000002",
+      "studentId": "STU-000002",
+      "classId": "C-000001",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000003",
+      "studentId": "STU-000003",
+      "classId": "C-000006",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000004",
+      "studentId": "S-000017",
+      "classId": "C-000007",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000005",
+      "studentId": "S-000037",
+      "classId": "CLS-000001",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000006",
+      "studentId": "S-000038",
+      "classId": "CLS-000001",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000007",
+      "studentId": "S-000039",
+      "classId": "CLS-000001",
+      "discountPct": 5,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000008",
+      "studentId": "S-000040",
+      "classId": "CLS-000001",
+      "discountPct": 0,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000009",
+      "studentId": "S-000006",
+      "classId": "C-000005",
+      "discountPct": 50,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "id": "ENR-000010",
+      "studentId": "S-000009",
+      "classId": "C-000005",
+      "discountPct": 50,
+      "enrolledAt": "2025-09-13",
+      "notes": ""
+    }
+  ],
+  "sessions": [
+    {
+      "id": "SES-000022",
+      "classId": "C-000001",
+      "date": "2025-10-03",
+      "status": "held",
+      "durationHrs": 1,
+      "teacherId": null,
+      "teacherName": null,
+      "teacherRatePerHourSnap": 0,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000031",
+      "classId": "C-000001",
+      "date": "2025-09-12",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000032",
+      "classId": "C-000001",
+      "date": "2025-09-19",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000033",
+      "classId": "C-000001",
+      "date": "2025-09-26",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000034",
+      "classId": "C-000001",
+      "date": "2025-09-24",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000035",
+      "classId": "C-000001",
+      "date": "2025-09-17",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000036",
+      "classId": "C-000001",
+      "date": "2025-09-10",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000042",
+      "classId": "C-000004",
+      "date": "2025-09-09",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000043",
+      "classId": "C-000004",
+      "date": "2025-09-13",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000044",
+      "classId": "C-000004",
+      "date": "2025-09-16",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000045",
+      "classId": "C-000004",
+      "date": "2025-09-20",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000046",
+      "classId": "C-000004",
+      "date": "2025-09-23",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000047",
+      "classId": "C-000004",
+      "date": "2025-09-27",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000048",
+      "classId": "C-000004",
+      "date": "2025-09-30",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000049",
+      "classId": "C-000005",
+      "date": "2025-09-01",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000003",
+      "teacherName": "Vietnames Teacher",
+      "teacherRatePerHourSnap": 200000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000051",
+      "classId": "C-000005",
+      "date": "2025-09-08",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000003",
+      "teacherName": "Vietnames Teacher",
+      "teacherRatePerHourSnap": 200000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000053",
+      "classId": "C-000005",
+      "date": "2025-09-15",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000003",
+      "teacherName": "Vietnames Teacher",
+      "teacherRatePerHourSnap": 200000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000055",
+      "classId": "C-000005",
+      "date": "2025-09-22",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000003",
+      "teacherName": "Vietnames Teacher",
+      "teacherRatePerHourSnap": 200000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000057",
+      "classId": "C-000005",
+      "date": "2025-09-29",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000003",
+      "teacherName": "Vietnames Teacher",
+      "teacherRatePerHourSnap": 200000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000058",
+      "classId": "C-000006",
+      "date": "2025-09-07",
+      "status": "held",
+      "durationHrs": 2,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000059",
+      "classId": "C-000006",
+      "date": "2025-09-14",
+      "status": "held",
+      "durationHrs": 2,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000060",
+      "classId": "C-000006",
+      "date": "2025-09-21",
+      "status": "held",
+      "durationHrs": 2,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000061",
+      "classId": "C-000006",
+      "date": "2025-09-28",
+      "status": "held",
+      "durationHrs": 2,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000062",
+      "classId": "C-000003",
+      "date": "2025-09-03",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000064",
+      "classId": "C-000003",
+      "date": "2025-09-10",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000065",
+      "classId": "C-000003",
+      "date": "2025-09-12",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000067",
+      "classId": "C-000003",
+      "date": "2025-09-19",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000068",
+      "classId": "C-000003",
+      "date": "2025-09-24",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000069",
+      "classId": "C-000003",
+      "date": "2025-09-26",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000070",
+      "classId": "C-000002",
+      "date": "2025-09-02",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000071",
+      "classId": "C-000002",
+      "date": "2025-09-04",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000072",
+      "classId": "C-000002",
+      "date": "2025-09-09",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000073",
+      "classId": "C-000002",
+      "date": "2025-09-11",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000074",
+      "classId": "C-000002",
+      "date": "2025-09-16",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000075",
+      "classId": "C-000002",
+      "date": "2025-09-18",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000076",
+      "classId": "C-000002",
+      "date": "2025-09-23",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000077",
+      "classId": "C-000002",
+      "date": "2025-09-25",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000078",
+      "classId": "C-000002",
+      "date": "2025-09-30",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000088",
+      "classId": "CLS-000001",
+      "date": "2025-09-04",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000002",
+      "teacherName": "Clayton",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000089",
+      "classId": "CLS-000001",
+      "date": "2025-09-11",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000002",
+      "teacherName": "Clayton",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000091",
+      "classId": "CLS-000001",
+      "date": "2025-09-25",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000002",
+      "teacherName": "Clayton",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000092",
+      "classId": "C-000001",
+      "date": "2025-09-03",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000093",
+      "classId": "C-000001",
+      "date": "2025-09-05",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000094",
+      "classId": "C-000004",
+      "date": "2025-09-02",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000095",
+      "classId": "C-000004",
+      "date": "2025-09-06",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000101",
+      "classId": "C-000003",
+      "date": "2025-09-05",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000103",
+      "classId": "C-000007",
+      "date": "2025-09-01",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000110",
+      "classId": "C-000007",
+      "date": "2025-09-29",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000111",
+      "classId": "C-000007",
+      "date": "2025-09-22",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000112",
+      "classId": "C-000007",
+      "date": "2025-09-15",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000113",
+      "classId": "C-000007",
+      "date": "2025-09-08",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000114",
+      "classId": "C-000007",
+      "date": "2025-09-04",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000115",
+      "classId": "C-000007",
+      "date": "2025-09-11",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000116",
+      "classId": "C-000007",
+      "date": "2025-09-18",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000117",
+      "classId": "C-000007",
+      "date": "2025-09-25",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000119",
+      "classId": "C-000003",
+      "date": "2025-09-17",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000001",
+      "teacherName": "Victor",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    },
+    {
+      "id": "SES-000120",
+      "classId": "CLS-000001",
+      "date": "2025-09-18",
+      "status": "held",
+      "durationHrs": 1.5,
+      "teacherId": "TEA-000002",
+      "teacherName": "Clayton",
+      "teacherRatePerHourSnap": 500000,
+      "note": "",
+      "present": []
+    }
+  ],
+  "teachers": [
+    {
+      "id": "TEA-000001",
+      "ratePerHour": 500000,
+      "name": "Victor",
+      "subjects": "ESL, LA, Math",
+      "email": "vmoronu@gmail.com",
+      "phone": "0988930491",
+      "note": ""
+    },
+    {
+      "id": "TEA-000002",
+      "ratePerHour": 500000,
+      "name": "Clayton",
+      "subjects": "ESL, LA",
+      "email": "",
+      "phone": "",
+      "note": ""
+    },
+    {
+      "id": "TEA-000003",
+      "ratePerHour": 200000,
+      "name": "Vietnames Teacher",
+      "subjects": "",
+      "email": "",
+      "phone": "",
+      "note": ""
+    }
+  ],
+  "meta": {
+    "seq:SES": 121,
+    "seq:STU": 3,
+    "seq:ENR": 10,
+    "seq:TEA": 3,
+    "seq:CLS": 1
+  }
+}

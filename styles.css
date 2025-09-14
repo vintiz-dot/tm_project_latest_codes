@@ -1,0 +1,43 @@
+:root {
+  --held-bg:#e9f7ef; --held-border:#28a745;
+  --cancel-bg:#fdecea; --cancel-border:#dc3545;
+}
+legend, .legend { font-size:.9rem; color:#6c757d; }
+.legend-box{display:inline-block;width:14px;height:14px;border:1px solid #ced4da;border-radius:.25rem}
+.legend-box.held{background:var(--held-bg);border-color:var(--held-border)}
+.legend-box.cancelled{background:var(--cancel-bg);border-color:var(--cancel-border)}
+.legend-box.empty{background:#fff}
+
+.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.5rem;width:100%}
+.calendar-cell{
+  aspect-ratio:1/1;border:1px solid #dee2e6;border-radius:.375rem;
+  display:flex;align-items:flex-start;justify-content:flex-end;
+  padding:.25rem;font-size:.85rem;cursor:pointer;user-select:none;position:relative;background:#fff
+}
+.calendar-cell:hover{box-shadow:0 0 0 .15rem rgba(13,110,253,.15)}
+.calendar-cell.disabled{background:#f8f9fa;color:#adb5bd;cursor:not-allowed}
+.calendar-cell.held{background:var(--held-bg);border-color:var(--held-border)}
+.calendar-cell.cancelled{background:var(--cancel-bg);border-color:var(--cancel-border)}
+.calendar-weekday{font-size:.75rem;font-weight:600;color:#6c757d;text-transform:uppercase;text-align:center}
+
+/* FullCalendar background day styles for held and cancelled sessions */
+.fc .held-day{background:var(--held-bg) !important;}
+.fc .cancelled-day{background:var(--cancel-bg) !important;}
+
+.class-card .badge{font-weight:500}
+.class-card .card-header{background:#fff}
+.class-card .card-body{overflow:hidden}
+.price-pill{font-size:.75rem}
+.small-muted{font-size:.85rem;color:#6c757d}
+
+.table td,.table th{vertical-align:middle}
+.invoice-table thead th{background:#f8f9fa}
+
+.print-only{display:none}
+@media print{
+  .no-print{display:none !important}
+  .print-only{display:block}
+  body{background:#fff}
+  .card{box-shadow:none !important;border:0}
+  .table-sm th,.table-sm td{padding:.25rem .5rem}
+}

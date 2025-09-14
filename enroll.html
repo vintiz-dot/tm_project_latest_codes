@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tuition Manager — Enrollment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-semibold" href="index.html">Tuition Manager</a>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Calendar</a></li>
+        <li class="nav-item"><a class="nav-link active" href="enroll.html">Enrollment Manager</a></li>
+        <li class="nav-item"><a class="nav-link" href="student.html">Student Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+        <li class="nav-item"><a class="nav-link" href="payroll.html">Payroll</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+        <li class="nav-item"><a class="nav-link" href="finance.html">Finance</a></li>
+      </ul>
+      <div class="d-flex gap-2 align-items-center ms-auto">
+        <span class="small text-muted">Month:</span>
+        <input type="month" id="enrollMonth" class="form-control form-control-sm" style="width:170px"/>
+        <!-- Data menu -->
+        <div class="dropdown ms-2">
+          <button class="btn btn-sm btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Data</button>
+          <ul class="dropdown-menu dropdown-menu-end small">
+            <li><h6 class="dropdown-header">Students & Enrollments</h6></li>
+            <li><a class="dropdown-item" href="#" id="actConnectStudents">Connect Students JSON…</a></li>
+            <li><a class="dropdown-item" href="#" id="actCreateStudents">Create New Students JSON…</a></li>
+            <li><a class="dropdown-item" href="#" id="actImportSpreadsheet">Import Spreadsheet (XLSX/CSV)…</a></li>
+            <li><a class="dropdown-item" href="#" id="actSaveStudents">Save Students Now</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><h6 class="dropdown-header">Teachers</h6></li>
+            <li><a class="dropdown-item" href="#" id="actConnectTeachers">Connect Teachers JSON…</a></li>
+            <li><a class="dropdown-item" href="#" id="actCreateTeachers">Create New Teachers JSON…</a></li>
+            <li><a class="dropdown-item" href="#" id="actSaveTeachers">Save Teachers Now</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li class="px-3 py-1 text-muted" id="dataStatus">No files connected</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h5 class="mb-0">Enrollment Manager</h5>
+      <a id="openProfileBtn" class="btn btn-sm btn-outline-primary" href="#">Open profile</a>
+    </div>
+
+    <div class="row g-3">
+      <!-- Directory -->
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Students</strong>
+            <button id="btnAddStudent" class="btn btn-sm btn-outline-primary">Add</button>
+          </div>
+          <div class="card-body">
+            <input id="studentSearch" class="form-control mb-2" placeholder="Search students…"/>
+            <div id="studentList" class="list-group list-group-flush small"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editor -->
+      <div class="col-lg-8">
+        <div class="card h-100">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong id="selStudentTitle">Select a student</strong>
+            <a id="openProfileBtn2" class="btn btn-sm btn-outline-secondary" href="#">Open profile</a>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive small">
+              <table class="table table-sm align-middle">
+                <thead>
+                  <tr>
+                    <th style="width:40%">Class</th>
+                    <th style="width:16%">Discount %</th>
+                    <th style="width:20%">Enrolled At</th>
+                    <th>Notes</th>
+                    <th class="text-end" style="width:1%"></th>
+                  </tr>
+                </thead>
+                <tbody id="enrollRows"></tbody>
+              </table>
+              <button id="btnAddEnrollRow" class="btn btn-sm btn-outline-secondary">Add class</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Add-to-class modal (directory “Add student to class”) -->
+  <div class="modal fade" id="addToClassModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add student to class</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label class="form-label">Student</label>
+        <select id="addStudentSelect" class="form-select form-select-sm"></select>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btnConfirmAddToClass">Add</button>
+      </div>
+    </div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      TM.initEnrollmentPage();
+      document.getElementById('openProfileBtn').addEventListener('click', function(e){
+        e.preventDefault();
+        var sid = TM._selStudentId || (TM.settings.students[0] && TM.settings.students[0].id);
+        if(sid) location.href = 'student.html?id='+sid;
+      });
+      document.getElementById('openProfileBtn2').addEventListener('click', function(e){
+        e.preventDefault();
+        var sid = TM._selStudentId || (TM.settings.students[0] && TM.settings.students[0].id);
+        if(sid) location.href = 'student.html?id='+sid;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.TM && TM.initDataHooks) TM.initDataHooks();   // wire Data menu
+    });
+  </script>
+</body>
+</html>

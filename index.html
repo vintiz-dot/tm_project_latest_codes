@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tuition Manager — Calendar</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- FullCalendar (month grid + interactions) -->
+  <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.10/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+
+  <!-- App styles -->
+  <link href="styles.css" rel="stylesheet"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.10/main.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+
+<style>
+  .fc-mini{border:1px solid #e9ecef;border-radius:.5rem;overflow:hidden}
+  .fc .fc-daygrid-day{cursor:pointer}
+  .fc .held-day{background:rgba(25,135,84,.18)} /* success tint */
+  .fc .cancelled-day{background:rgba(220,53,69,.18)} /* danger tint */
+</style>
+
+
+  <!-- Minimal inline styles for calendar cards -->
+  <style>
+    .class-card .price-pill{background:#eef4ff;border-radius:999px;padding:.15rem .5rem}
+    .small-muted{font-size:.85rem;color:#6c757d}
+    .fc-mini{border:1px solid #e9ecef;border-radius:.5rem;overflow:hidden}
+    .fc .fc-daygrid-day{cursor:pointer}
+    .fc .held-day{background:rgba(25,135,84,.18)} /* bootstrap success tint */
+  </style>
+</head>
+<body>
+  <!-- Top nav -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-semibold" href="index.html">Tuition Manager</a>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Calendar</a></li>
+        <li class="nav-item"><a class="nav-link" href="enroll.html">Enrollment Manager</a></li>
+        <li class="nav-item"><a class="nav-link" href="student.html">Student Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+        <li class="nav-item"><a class="nav-link" href="payroll.html">Payroll</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+        <li class="nav-item"><a class="nav-link" href="finance.html">Finance</a></li>
+      </ul>
+
+      <!-- Data menu -->
+      <div class="dropdown ms-2">
+        <button class="btn btn-sm btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Data</button>
+        <ul class="dropdown-menu dropdown-menu-end small">
+          <li><h6 class="dropdown-header">Students & Enrollments</h6></li>
+          <li><a class="dropdown-item" href="#" id="actConnectStudents">Connect Students JSON…</a></li>
+          <li><a class="dropdown-item" href="#" id="actCreateStudents">Create New Students JSON…</a></li>
+          <li><a class="dropdown-item" href="#" id="actSaveStudents">Save Students Now</a></li>
+          <li><hr class="dropdown-divider"/></li>
+          <li class="px-3 py-1 text-muted" id="dataStatus">No files connected</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Toolbar -->
+  <main class="container my-4">
+    <div class="d-flex align-items-center gap-2 mb-3">
+      <button id="btnPrevMonth" class="btn btn-outline-secondary btn-sm">◀</button>
+      <input id="monthPicker" type="month" class="form-control" style="max-width: 220px;">
+      <button id="btnNextMonth" class="btn btn-outline-secondary btn-sm">▶</button>
+
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <input id="fileImport" type="file" accept=".json,application/json" class="form-control form-control-sm" style="max-width:260px">
+        <button id="btnExport" class="btn btn-sm btn-outline-primary">Export JSON</button>
+      </div>
+    </div>
+
+    <!-- Class cards render here -->
+    <div id="classCalendars" class="row g-3"></div>
+  </main>
+
+  <!-- Session Editor modal -->
+  <div class="modal fade" id="sessionEditorModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Edit Session</h6>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-2 small text-muted" id="sessionDateLabel">—</div>
+          <div class="mb-3">
+            <label class="form-label">Teacher</label>
+            <select id="sessionTeacher" class="form-select"></select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Duration (hours)</label>
+            <input id="sessionDuration" type="number" min="0" step="0.25" class="form-control" value="1"/>
+            <div class="form-text">Saving snapshots the selected teacher’s rate into this session.</div>
+          </div>
+          <div>
+            <label class="form-label">Session note (optional)</label>
+            <textarea id="sessionNote" class="form-control" rows="3" placeholder="Teacher/lesson notes..."></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-danger" id="btnClearSession">Clear</button>
+          <button class="btn btn-primary" id="btnSaveSession">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Class Notes modal -->
+  <div class="modal fade" id="classNotesModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title"><span id="cmTitle">Class</span> — Monthly Notes</h6>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <label class="form-label mb-0">Month</label>
+            <input id="cmMonth" type="month" class="form-control" style="max-width: 200px;">
+          </div>
+          <textarea id="cmNotesInput" class="form-control" rows="8" placeholder="Class notes, curriculum reminders, etc."></textarea>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="cmSaveNotes">Save notes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Class Detail modal -->
+  <div class="modal fade" id="classDetailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title"><span id="cdTitle">Class</span></h6>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <ul class="nav nav-tabs mb-3" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#cdTabInfo" type="button" role="tab">Info</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#cdTabRoster" type="button" role="tab">Roster</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#cdTabAttendance" type="button" role="tab">Attendance</button></li>
+          </ul>
+
+          <div class="tab-content">
+            <!-- Info -->
+            <div class="tab-pane fade show active" id="cdTabInfo" role="tabpanel">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Primary teacher</label>
+                  <select id="cdTeacherSel" class="form-select"></select>
+                  <div id="cdTeacherLine" class="form-text mt-1">Rate default: —</div>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Price / session (VND)</label>
+                  <input id="cdPrice" type="number" class="form-control" min="0" step="1000">
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Default duration (hours)</label>
+                  <input id="cdDuration" type="number" class="form-control" min="0" step="0.25">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Class notes</label>
+                  <textarea id="cdNotes" class="form-control" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Roster -->
+            <div class="tab-pane fade" id="cdTabRoster" role="tabpanel">
+              <div class="table-responsive">
+                <table class="table table-sm align-middle">
+                  <thead>
+                    <tr>
+                      <th>Student</th>
+                      <th style="width:120px">Student ID</th>
+                      <th style="width:120px">Discount %</th>
+                      <th style="width:160px">Enrolled At</th>
+                    </tr>
+                  </thead>
+                  <tbody id="cdRosterBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Attendance -->
+            <div class="tab-pane fade" id="cdTabAttendance" role="tabpanel">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <label class="form-label mb-0">Month</label>
+                <input id="cdMonth" type="month" class="form-control form-control-sm" style="width:170px">
+              </div>
+              <div class="table-responsive">
+                <table class="table table-sm align-middle">
+                  <thead>
+                    <tr>
+                      <th style="width:120px">Date</th>
+                      <th style="width:120px">Status</th>
+                      <th>Teacher</th>
+                      <th class="text-end" style="width:100px">Hrs</th>
+                      <th class="text-end" style="width:120px">—</th>
+                      <th class="text-end" style="width:120px">—</th>
+                      <th class="text-end" style="width:120px">—</th>
+                      <th class="text-end" style="width:120px">—</th>
+                    </tr>
+                  </thead>
+                  <tbody id="cdAttendanceBody"></tbody>
+                </table>
+              </div>
+              <div class="small text-muted">Tip: double-click a day in the calendar to open the Session Editor.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="script.js?v=fc1"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.TM) {
+        TM.initDataHooks && TM.initDataHooks();
+        TM.initCalendarPage && TM.initCalendarPage(); // FullCalendar version
+      }
+    });
+  </script>
+</body>
+</html>
